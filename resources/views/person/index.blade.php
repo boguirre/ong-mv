@@ -24,7 +24,7 @@
                     </button>
                 </form> --}}
 
-                <div class="grid grid-cols-4 gap-4 mt-4">
+                <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-4 mt-4">
                     <div>
                         {!! Form::label('category_id', 'DNI') !!}
                         {!! Form::text('subtitle', null, ['class' => 'form-input rounded-lg  block w-full mt-1' . ($errors->has('subtitle') ? ' border-red-600' : ''), 'autocomplete'=>'off', 'id'=>'dni', 'disabled']) !!}
@@ -43,7 +43,7 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-4 gap-4 mt-4">
+                <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-4 mt-4">
 
                     <div>
                         {!! Form::label('identida_label', '¿Como te Identificas?') !!}
@@ -65,7 +65,7 @@
 
                 </div>
 
-                <div class="grid grid-cols-3 gap-4 mt-4">
+                <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-4 mt-4">
                     <div>
                         {!! Form::label('lugnaci_label', 'Lugar de Nacimiento') !!}
                         {!! Form::select('lugar_nacimiento', ['Lima'], null, ['class' => 'form-input rounded-lg block w-full mt-1']) !!}
@@ -80,7 +80,7 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-3 gap-4 mt-4">
+                <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-4 mt-4">
                     <div>
                         {!! Form::label('email_label', 'Correo Electronico') !!}
                         {!! Form::text('email', null, ['class' => 'form-input rounded-lg block w-full mt-1']) !!}
@@ -95,7 +95,7 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-4 gap-4 mt-4">
+                <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-4 mt-4">
                     <div>
                         {!! Form::label('grado_label', 'Grado de Instruccion') !!}
                         {!! Form::select('grado', ['Egresado', 'Bachiller'], null, ['class' => 'form-input rounded-lg block w-full mt-1']) !!}
